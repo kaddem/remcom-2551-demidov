@@ -1,0 +1,15 @@
+.header {
+  color: #fff;
+  background-color: $color-dark;
+}
+
+
+.menu {
+  ul {
+    display: flex;
+  }
+
+  a {
+    color: $color-light;
+  }
+}
