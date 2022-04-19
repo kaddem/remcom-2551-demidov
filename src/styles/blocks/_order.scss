@@ -1,0 +1,7 @@
+.order-inner {
+  @include inner;
+}
+
+.order-title {
+  @include section-title;
+}

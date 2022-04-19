@@ -1,0 +1,22 @@
+.services {
+  padding: 100px 0;
+  background-color: $color-light;
+}
+
+.services-inner {
+  @include inner;
+}
+
+.services-title {
+  @include section-title;
+}
+
+.services-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-item {
+  flex-basis: calc(50% - $gap-half);
+}
