@@ -15,8 +15,26 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .services-item {
   flex-basis: calc(50% - $gap-half);
+  margin-top: 50px;
+}
+
+.services-caption {
+  margin-bottom: 30px;
+  font-family: $font-ral;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  color: $color-dark;
+}
+
+.services-text {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 38px;
+  color: $color-dark;
 }

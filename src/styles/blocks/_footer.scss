@@ -1,3 +1,9 @@
+.footer {
+  padding: 30px 0;
+  background-color: $color-dark;
+  color: $color-light;
+}
+
 .footer-inner {
   @include inner;
 }
