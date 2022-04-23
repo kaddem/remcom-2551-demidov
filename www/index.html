@@ -92,7 +92,26 @@
         <h2 class="order-title">Заявка на ремонт</h2>
 
         <form action="" class="form">
-
+          <div class="form-field form-field-half">
+            <label for="name" class="form-label">Имя</label>
+            <input id="name" name="name" type="text" class="form-input">
+          </div>
+          <div class="form-field form-field-half">
+            <label for="phone" class="form-label">Телефон</label>
+            <input id="phone" name="phone" type="tel" class="form-input">
+          </div>
+          <div class="form-field">
+            <label for="message" class="form-label">Что ремонтируем?</label>
+            <textarea name="message" id="message" class="form-textarea"></textarea>
+          </div>
+          <div class="form-field">
+            <input id="checkbox" type="checkbox" name="checkbox" class="form-checkbox">
+            <label for="checkbox" class="form-checkbox-label">Даю согласие на обработку персональных данных с
+              соответствии с <a href="#">политикой обработки персональных данных</a></label>
+          </div>
+          <div class="form-field">
+            <button class="btn btn-form" type="submit">Отправить</button>
+          </div>
         </form>
       </div>
     </section>

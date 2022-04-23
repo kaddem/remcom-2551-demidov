@@ -1,5 +1,6 @@
 .order {
   padding: 100px 0 90px;
+  background-color: rgba($color-light, .2);
 }
 
 .order-inner {
@@ -8,4 +9,5 @@
 
 .order-title {
   @include section-title;
+  margin-bottom: 70px;
 }
