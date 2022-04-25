@@ -1,6 +1,14 @@
 .promo {
   padding: 140px 0;
   background-color: rgba($color-light, .2);
+
+  @media (max-width: $tablet-max) {
+    padding: 90px 0;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding: 60px 0;
+  }
 }
 
 .promo-inner {
@@ -11,6 +19,11 @@
   display: flex;
   margin-left: -$gap-half;
   margin-right: -$gap-half;
+
+  @media (max-width: $mobile-max) {
+    display: block;
+    text-align: center;
+  }
 }
 
 .promo-desc {
@@ -25,11 +38,23 @@
   font-weight: 300;
   font-size: 116px;
   line-height: 136px;
+
+  @media (max-width: $tablet-max) {
+    font-size: 64px;
+    line-height: 75px;
+  }
 }
 
 .promo-text {
+  margin-bottom: 70px;
   font-size: 32px;
   line-height: 44px;
+
+  @media (max-width: $tablet-max) {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 33px;
+  }
 }
 
 .promo-visual {

@@ -9,6 +9,10 @@
 body {
   padding-top: 98px;
   font-family: $font-open;
+
+  @media (max-width: $mobile-max) {
+    padding-top: 53px;
+  }
 }
 
 img {
