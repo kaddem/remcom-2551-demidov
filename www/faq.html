@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Мой первый проект</title>
+  <title>RemCom | вопросы и ответы</title>
   <link rel="stylesheet" href="style/style.css">
 </head>
 
@@ -15,7 +15,7 @@
         <a href="index.html" class="logo">
           RemCom
         </a>
-        <nav class="menu">
+        <nav class="menu j-menu">
           <ul>
             <li>
               <a href="rewiews.html">Отзывы</a>
@@ -32,62 +32,55 @@
           </ul>
         </nav>
         <a href="tel:+78128888888" class="header-phone">+7 812 888-88-88</a>
-        <button class="burger">menu</button>
+        <button class="burger j-burger">menu</button>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="promo">
-      <div class="promo-inner">
+    <section class="faq">
+      <div class="faq-inner">
+        <h1 class="faq-title">Часто задаваемые вопросы</h1>
 
-        <div class="promo-wrap">
-          <div class="promo-desc">
-            <h1 class="promo-title">RemCom</h1>
-            <p class="promo-text">Ремонт мелкой и крупной бытовой техники в Санкт-Петербурге</p>
-            <a href="#" class="btn">Оставить заявку</a>
+        <div class="accordion">
+          <button class="accordion-btn j-accordion-btn">Как можно оплатить услуги ремонта?</button>
+          <div class="accordion-content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, deleniti minima a, quidem repellat
+              recusandae aliquam, similique porro nemo dignissimos deserunt quod adipisci iusto dolor illo optio! Ea,
+              aliquam quas?</p>
           </div>
-          <div class="promo-visual">
-            <figure class="promo-figure">
-              <img src="images/mens-chefir.jpg" alt="Мужики варят" class="promo-img">
-              <figcaption class="promo-img-desc">Мужики смотрят</figcaption>
-            </figure>
+        </div>
+
+        <div class="accordion">
+          <button class="accordion-btn j-accordion-btn">Какую гарантию вы даете на ремонт устройств?</button>
+          <div class="accordion-content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, deleniti minima a, quidem repellat
+              recusandae aliquam, similique porro nemo dignissimos deserunt quod adipisci iusto dolor illo optio! Ea,
+              aliquam quas?</p>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <button class="accordion-btn j-accordion-btn">Можно ли попросить мастера станцевать лизгинку?</button>
+          <div class="accordion-content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, deleniti minima a, quidem repellat
+              recusandae aliquam, similique porro nemo dignissimos deserunt quod adipisci iusto dolor illo optio! Ea,
+              aliquam quas?</p>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <button class="accordion-btn j-accordion-btn">Можно ли попросить мастера станцевать лизгинку?</button>
+          <div class="accordion-content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, deleniti minima a, quidem repellat
+              recusandae aliquam, similique porro nemo dignissimos deserunt quod adipisci iusto dolor illo optio! Ea,
+              aliquam quas?</p>
           </div>
         </div>
 
       </div>
     </section>
-    <section class="services">
-      <div class="services-inner">
-        <h2 class="services-title">Что мы ремонтируем</h2>
-        <div class="services-wrap">
-          <div class="services-item">
-            <i class="services-icon" style="background-image: url();"></i>
-            <h3 class="services-caption">Кухонную технику</h3>
-            <p class="services-text">Холодильники, микроволновки,
-              Духовые шкафы, кухонные комбайны и т.д.</p>
-          </div>
-          <div class="services-item">
-            <i class="services-icon" style="background-image: url();"></i>
-            <h3 class="services-caption">Смартфоны</h3>
-            <p class="services-text">Смартфоны и планшеты Apple, Samsung,
-              Huawey, Honor, Xiaomi, Oppo и многие другие модели</p>
-          </div>
-          <div class="services-item">
-            <i class="services-icon" style="background-image: url();"></i>
-            <h3 class="services-caption">Теле и аудио</h3>
-            <p class="services-text">Современные и не очень телефизоры, акустические системы, в том числе HiFi класса,
-              ресиверы и проигрыватели грампластинок</p>
-          </div>
-          <div class="services-item">
-            <i class="services-icon" style="background-image: url();"></i>
-            <h3 class="services-caption">Деревянную мебель</h3>
-            <p class="services-text">Мебель из массива дерева - стулья, табуреты, шкафы, тумбы, секретеры и кабинеты.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+
     <section class="order">
       <div class="order-inner">
         <h2 class="order-title">Заявка на ремонт</h2>
@@ -133,8 +126,6 @@
         </li>
       </ul>
     </div>
-  </footer>
-
 
   <script src="scripts/jquery-3.6.0.min.js"></script>
   <script src="scripts/script.js"></script>
