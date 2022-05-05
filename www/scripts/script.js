@@ -31,5 +31,53 @@ $(document).ready(function() {
 
   });
 
+
+  // Tabs
+  $('.j-tabs-link').on('click', function(event){
+    event.preventDefault();
+
+    let index = $(this).index('.j-tabs-link');
+
+    $('.j-tabs-link').removeClass('active');
+    $(this).addClass('active');
+
+    $('.j-contacts-item').removeClass('active');
+    $('.j-contacts-item').eq(index).addClass('active');
+
+  });
+
+
+  // Works filter
+  $('.j-works-link').on('click', function(event) {
+    event.preventDefault();
+
+    let dataFilter = $(this).data('filter');
+
+    $('.j-works-link').removeClass('active');
+    $(this).addClass('active');
+
+    if (dataFilter === 'all') {
+      $('.j-works-item').show();
+      return;
+    }
+
+    $('.j-works-item').each(function() {
+      let dataType = $(this).data('type');
+
+      if (dataType === dataFilter) {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    });
+
+  });
+
+
+  // Carousel
+  $('.j-carousel').slick({
+    dots: true
+  });
+
 });
 

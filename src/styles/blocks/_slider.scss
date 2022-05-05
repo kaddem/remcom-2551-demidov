@@ -1,0 +1,67 @@
+.slider {
+  padding: 140px 0 130px;
+  background-color: $color-light;
+}
+
+.slider-inner {
+  @include inner;
+}
+
+.slider-title {
+  @include section-title;
+}
+
+.slider-wrap {
+  margin-top: 70px;
+}
+
+.carousel {
+  padding: 0 50px;
+
+  .slick-arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/icon-arrow-left.png');
+    background-size: contain;
+    border: none;
+    font-size: 0;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .slick-prev {
+    left: 0;
+  }
+
+  .slick-next {
+    right: 0;
+    transform: rotate(180deg);
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+    li {
+      margin: 0 5px;
+    }
+
+    .slick-active {
+      button {
+        background-color: $color-dark;
+      }
+    }
+
+    button {
+      width: 14px;
+      height: 14px;
+      font-size: 0;
+      border-radius: 50%;
+      border: 3px solid $color-dark;
+    }
+  }
+}

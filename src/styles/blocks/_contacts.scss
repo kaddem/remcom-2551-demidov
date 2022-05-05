@@ -28,4 +28,16 @@
   line-height: 49px;
   text-decoration: none;
   color: $color-dark;
+
+  &.active {
+    color: $color-orange;
+  }
+}
+
+.contacts-item {
+  display: none;
+
+  &.active {
+    display: block;
+  }
 }
