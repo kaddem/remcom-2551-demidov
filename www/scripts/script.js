@@ -75,9 +75,28 @@ $(document).ready(function() {
 
 
   // Carousel
-  $('.j-carousel').slick({
-    dots: true
+  if ($('.j-carousel').length) {
+
+    $('.j-carousel').slick({
+      dots: true
+    });
+
+  }
+
+  // ajax
+
+  $.ajax({
+    type: 'POST',
+    url: 'jsons/reviews.json',
+    data: 'count=4',
+    success: function(res) {
+      console.log(res);
+    },
+    error: function() {
+      console.log('О нееетт!!!');
+    }
   });
+  
 
 });
 

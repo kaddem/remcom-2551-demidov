@@ -24,13 +24,17 @@
 }
 
 .tabs-link {
+  display: block;
   font-size: 36px;
   line-height: 49px;
   text-decoration: none;
   color: $color-dark;
+  transition: all .3s;
 
-  &.active {
+  &.active,
+  &:hover {
     color: $color-orange;
+    transform: rotate(-15deg);
   }
 }
 

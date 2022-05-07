@@ -84,6 +84,7 @@
     line-height: 33px;
     text-decoration: none;
     color: $color-light;
+    transition: color .3s;
 
     &:hover {
       color: $color-orange;
