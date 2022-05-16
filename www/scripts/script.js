@@ -76,27 +76,55 @@ $(document).ready(function() {
 
   // Carousel
   if ($('.j-carousel').length) {
-
     $('.j-carousel').slick({
       dots: true
     });
-
   }
 
   // ajax
 
-  $.ajax({
-    type: 'POST',
-    url: 'jsons/reviews.json',
-    data: 'count=4',
-    success: function(res) {
-      console.log(res);
-    },
-    error: function() {
-      console.log('О нееетт!!!');
-    }
+  // ajax отзывы
+
+  $('.j-btn-review').on('click', function() {
+
+    $('.j-btn-review').addClass('btn-preload');
+
+    $.ajax({
+      type: 'POST',
+      url: 'jsons/reviews.json',
+      data: 'count=4',
+      success: function(res) {
+        $('.j-btn-review').removeClass('btn-preload');
+        createHtmlString(res.reviews);
+      },
+      error: function() {
+        console.log('О нееетт!!!');
+      }
+    });
   });
-  
+
+  function createHtmlString(dataArray) {
+    let htmlString = '';
+
+    dataArray.forEach(function(dataItem) {
+      htmlString = htmlString + `<div class="reviews-item">
+        <div class="reviews-photo-wrap">
+          <img src="${dataItem.imgUrl}" alt="" class="reviews-img">
+        </div>
+        <div class="reviews-content">
+          <strong class="reviews-name">${dataItem.name}</strong>
+          <blockquote class="reviews-quote">“${dataItem.text}”</blockquote>
+        </div>
+      </div>`;
+    });
+
+    printToPage(htmlString);
+  }
+
+  function printToPage(string) {
+    $('.j-reviews-list').append(string);
+  }
+
 
 });
 
